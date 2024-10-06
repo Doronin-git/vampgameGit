@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal health_deplited
+
 var health = 100.0
 
 func _physics_process(delta):
@@ -13,4 +15,11 @@ func _physics_process(delta):
 		$HappyBoo.play_idle_animation()
 		
 
-
+	const DAMAGE_RATE = 10.0
+	var overlapping = %Hurtbox.get_overlapping_bodies()
+	if overlapping.size() > 0:
+		health -= DAMAGE_RATE * overlapping.size() * delta
+		%ProgressBar.value = health
+		%ProgressBar.max_value = 100
+		if health <= 0.0:
+			health_deplited.emit()

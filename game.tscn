@@ -22,7 +22,7 @@ position = Vector2(264, 313)
 position = Vector2(1416, 171)
 
 [node name="PineTree3" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(454, 659)
+position = Vector2(584, 547)
 
 [node name="PineTree4" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(1612, 802)

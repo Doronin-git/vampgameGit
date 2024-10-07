@@ -41,23 +41,56 @@ autostart = true
 [node name="PineTree" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(264, 313)
 
-[node name="PineTree2" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1416, 171)
+[node name="PineTree2" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(1152, -142)
 
-[node name="PineTree3" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(447, 739)
+[node name="PineTree3" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(183, 426)
 
-[node name="PineTree4" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1612, 802)
+[node name="PineTree4" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(1348, 489)
 
-[node name="PineTree5" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1543, 828)
+[node name="PineTree5" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(1279, 515)
 
-[node name="PineTree7" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1122, 992)
+[node name="PineTree7" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(858, 679)
 
-[node name="PineTree8" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1120, 483)
+[node name="PineTree8" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(856, 170)
+
+[node name="PineTree6" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(-40, 937)
+
+[node name="PineTree9" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(953, 956)
+
+[node name="PineTree10" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(1810, 862)
+
+[node name="PineTree11" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(2040, 491)
+
+[node name="PineTree12" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(2061, 35)
+
+[node name="PineTree13" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(2018, -520)
+
+[node name="PineTree14" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(1231, -601)
+
+[node name="PineTree15" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(339, -598)
+
+[node name="PineTree16" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(-830, -576)
+
+[node name="PineTree17" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(-774, -64)
+
+[node name="PineTree18" parent="PineTree" instance=ExtResource("2_lgpvb")]
+position = Vector2(-790, 561)
 
 [node name="GameOver" type="CanvasLayer" parent="."]
 unique_name_in_owner = true

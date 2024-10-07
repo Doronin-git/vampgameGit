@@ -218,12 +218,13 @@ script = ExtResource("1_87y5x")
 modulate = Color(0.898039, 0.878431, 0.831373, 1)
 z_index = -1
 z_as_relative = false
-scale = Vector2(0.8, 0.8)
+scale = Vector2(0.952381, 0.615385)
 texture = ExtResource("1_cq7ej")
 
 [node name="Anchor" type="Marker2D" parent="."]
 
 [node name="SlimeBody" type="Sprite2D" parent="Anchor"]
+position = Vector2(0, -4.8)
 texture = ExtResource("1_3j35h")
 offset = Vector2(0, -36)
 
@@ -236,6 +237,7 @@ offset = Vector2(0, -36)
 position = Vector2(0, -25)
 
 [node name="SlimeFace" type="Sprite2D" parent="Anchor/Face"]
+scale = Vector2(0.785714, 0.785714)
 texture = ExtResource("2_ygydt")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckd60eqvujtrr"]
+[gd_scene load_steps=7 format=3 uid="uid://ckd60eqvujtrr"]
 
 [ext_resource type="PackedScene" uid="uid://dkegtbw3xpx7n" path="res://player.tscn" id="1_814lj"]
 [ext_resource type="Script" path="res://game.gd" id="1_qadgi"]
@@ -10,6 +10,12 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -1739, 896, 0, 0, 0, 0, -1641, 881, 0, 0, 0, 0, 1587, 881, 0, 0, 0, 0, 1580, -969, 0, 0, 0, 0, -1633, -973, 0, 0, 0, 0, -1739, 896)
 }
 point_count = 6
+
+[sub_resource type="LabelSettings" id="LabelSettings_08w1f"]
+font_size = 50
+font_color = Color(1, 1, 0, 1)
+shadow_size = 27
+shadow_color = Color(0, 0, 0, 0.254902)
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -42,6 +48,14 @@ rotation = -0.151882
 [node name="Timer" type="Timer" parent="Player/Path2D/PathFollow2D"]
 wait_time = 0.5
 autostart = true
+
+[node name="ScoreLabel" type="Label" parent="Player"]
+unique_name_in_owner = true
+offset_left = -943.0
+offset_top = -515.0
+offset_right = -727.0
+offset_bottom = -443.0
+label_settings = SubResource("LabelSettings_08w1f")
 
 [node name="PineTree" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(264, 313)

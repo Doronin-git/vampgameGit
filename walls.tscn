@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://j1bew8xwglm3"]
+
+[ext_resource type="Texture2D" uid="uid://c0pa4x61l7g1l" path="res://addons/pngwing.com.png" id="1_l5qny"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmx0h"]
+size = Vector2(29, 1130)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+modulate = Color(0, 0, 1, 1)
+light_mask = 8
+visibility_layer = 8
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 8
+visibility_layer = 8
+position = Vector2(4.5, 555)
+shape = SubResource("RectangleShape2D_mmx0h")
+
+[node name="Pngwing_com" type="Sprite2D" parent="."]
+position = Vector2(62.9877, 558.24)
+rotation = 1.56821
+scale = Vector2(1.23778, 1)
+texture = ExtResource("1_l5qny")

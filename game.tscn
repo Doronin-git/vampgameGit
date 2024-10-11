@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckd60eqvujtrr"]
+[gd_scene load_steps=6 format=3 uid="uid://ckd60eqvujtrr"]
 
 [ext_resource type="PackedScene" uid="uid://dkegtbw3xpx7n" path="res://player.tscn" id="1_814lj"]
 [ext_resource type="Script" path="res://game.gd" id="1_qadgi"]
 [ext_resource type="PackedScene" uid="uid://cqvpml0ppslm2" path="res://pine_tree.tscn" id="2_lgpvb"]
+[ext_resource type="PackedScene" uid="uid://j1bew8xwglm3" path="res://walls.tscn" id="4_kf80p"]
 
 [sub_resource type="Curve2D" id="Curve2D_hftxx"]
 _data = {
@@ -24,7 +25,11 @@ offset_bottom = 1083.0
 color = Color(0.6, 1, 0.623529, 0.572549)
 
 [node name="Player" parent="." instance=ExtResource("1_814lj")]
+light_mask = 9
+visibility_layer = 9
 position = Vector2(959, 539)
+collision_layer = 9
+collision_mask = 9
 
 [node name="Path2D" type="Path2D" parent="Player"]
 curve = SubResource("Curve2D_hftxx")
@@ -40,9 +45,6 @@ autostart = true
 
 [node name="PineTree" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(264, 313)
-
-[node name="PineTree2" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1416, 171)
 
 [node name="PineTree3" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(447, 739)
@@ -86,6 +88,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 186
 text = "Game Over"
+
+[node name="wall" parent="." instance=ExtResource("4_kf80p")]
+modulate = Color(1, 1, 1, 1)
+position = Vector2(-624, -1)
 
 [connection signal="health_deplited" from="Player" to="." method="_on_player_health_deplited"]
 [connection signal="timeout" from="Player/Path2D/PathFollow2D/Timer" to="." method="_on_timer_timeout"]

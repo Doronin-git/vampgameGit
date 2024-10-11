@@ -90,8 +90,7 @@ theme_override_font_sizes/font_size = 186
 text = "Game Over"
 
 [node name="wall" parent="." instance=ExtResource("4_kf80p")]
-modulate = Color(1, 1, 1, 1)
-position = Vector2(-624, -1)
+position = Vector2(-528, -64)
 
 [connection signal="health_deplited" from="Player" to="." method="_on_player_health_deplited"]
 [connection signal="timeout" from="Player/Path2D/PathFollow2D/Timer" to="." method="_on_timer_timeout"]

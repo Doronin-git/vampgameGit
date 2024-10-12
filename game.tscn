@@ -64,7 +64,10 @@ position = Vector2(264, 313)
 position = Vector2(447, 739)
 
 [node name="PineTree4" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(1612, 802)
+position = Vector2(1656, 304)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(1656, 304)
 
 [node name="PineTree5" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(1543, 828)
@@ -74,6 +77,9 @@ position = Vector2(1122, 992)
 
 [node name="PineTree8" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(1120, 483)
+
+[node name="PineTree9" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(928, 208)
 
 [node name="GameOver" type="CanvasLayer" parent="."]
 unique_name_in_owner = true

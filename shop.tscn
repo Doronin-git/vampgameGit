@@ -25,6 +25,26 @@ offset_bottom = 920.0
 theme_override_font_sizes/font_size = 60
 text = "Restart"
 
+[node name="upgrade_speed" type="Button" parent="GameOver/ColorRect"]
+offset_left = 416.0
+offset_top = 216.0
+offset_right = 568.0
+offset_bottom = 256.0
+text = "SPEED"
+
+[node name="upgrade_hp" type="Button" parent="GameOver/ColorRect"]
+offset_left = 416.0
+offset_top = 304.0
+offset_right = 568.0
+offset_bottom = 344.0
+text = "MAX HP"
+
+[node name="upgrade_hp2" type="Button" parent="GameOver/ColorRect"]
+offset_left = 416.0
+offset_top = 400.0
+offset_right = 568.0
+offset_bottom = 440.0
+
 [node name="Shop_money_label" type="Label" parent="GameOver"]
 unique_name_in_owner = true
 offset_left = 752.0

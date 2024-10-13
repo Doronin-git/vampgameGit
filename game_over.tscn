@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://hm14pw3hjmk7"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_hcsns"]
+[ext_resource type="PackedScene" uid="uid://cqvpml0ppslm2" path="res://pine_tree.tscn" id="2_opdnj"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_hcsns")
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 1, 0.623529, 0.572549)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.604167
+anchor_top = 0.5
+anchor_right = 0.486979
+anchor_bottom = 0.5
+offset_left = -504.0
+offset_top = -404.0
+offset_right = 505.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 186
+text = "You died"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="shop_button" type="Button" parent="GameOver/ColorRect"]
+offset_left = 624.0
+offset_top = 528.0
+offset_right = 1296.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 60
+text = "Shop"
+
+[node name="PineTree" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(456, 1016)
+
+[node name="PineTree6" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(984, 144)
+
+[node name="PineTree7" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(896, 456)
+
+[node name="PineTree8" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(1192, 904)
+
+[node name="PineTree2" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(304, 448)
+
+[node name="PineTree3" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(1656, 416)
+
+[node name="PineTree4" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(1648, 824)
+
+[node name="PineTree5" parent="GameOver/ColorRect" instance=ExtResource("2_opdnj")]
+position = Vector2(168, 752)
+
+[node name="restart" type="Button" parent="GameOver"]
+offset_left = 624.0
+offset_top = 720.0
+offset_right = 1296.0
+offset_bottom = 816.0
+theme_override_font_sizes/font_size = 60
+text = "Restart"
+
+[connection signal="pressed" from="GameOver/ColorRect/shop_button" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="GameOver/restart" to="." method="_on_restart_pressed"]

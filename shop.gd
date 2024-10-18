@@ -1,9 +1,9 @@
 extends Node2D
 
-var speed_upgrade_cost =
-var hp_upgrade_cost =
-var damage_upgrade_cost =
-var reload_upgrade_cost =
+var speed_upgrade_cost = Global.speed_upgrade_cost
+var hp_upgrade_cost = Global.hp_upgrade_cost
+var damage_upgrade_cost = Global.damage_upgrade_cost
+var reload_upgrade_cost = Global.reload_upgrade_cost
 
 func havemoney(upgrade_cost): 
 	if Global.score > upgrade_cost:

@@ -19,6 +19,6 @@ func _physics_process(delta):
 	if overlapping.size() > 0:
 		health -= DAMAGE_RATE * overlapping.size() * delta
 		%ProgressBar.value = health
-		%ProgressBar.max_value = 100
+		%ProgressBar.max_value = Global.player_max_health
 		if health <= 0.0:
 			health_deplited.emit()

@@ -18,7 +18,7 @@ func _on_timer_timeout():
 	spawn_mob()
 
 func _on_mob_died():
-	Global.score += 1
+	Global.score += 25
 	score_label.text = str(Global.score) # conect to label
 
 func _on_player_health_deplited():

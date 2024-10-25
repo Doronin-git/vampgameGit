@@ -20,7 +20,7 @@ func take_damage():
 	mob_health -= player_damage
 	%Slime.play_hurt()
 	
-	if mob_health == 0:
+	if mob_health <= 0:
 		emit_signal("mob_died") 
 		queue_free()
 		

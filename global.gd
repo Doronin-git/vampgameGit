@@ -13,6 +13,10 @@ var player_max_health = 100.0
 var mob_max_health = 30.0
 var mob_speed = 400.0
 
+#mob_big
+var mob_big_speed = 200
+var mob_big_max_hp = 120
+
 #upgradescosts
 var speed_upgrade_cost = 100
 var hp_upgrade_cost = 100 

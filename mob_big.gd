@@ -1,15 +1,15 @@
 extends CharacterBody2D
 
-var mob_health = Global.mob_max_health
+var mob_health = Global.mob_big_max_hp
 var player_damage = Global.player_damage
-var mob_speed = Global.mob_speed
+var mob_speed = Global.mob_big_speed
 
 signal mob_died
 
 @onready var player = get_node("/root/Game/Player")
 
 func _ready():
-	%mob_verde.play_walk()
+	%mob_moreno.play_walk()
 
 func _physics_process(delta):
 	var direction = global_position.direction_to(player.global_position)
@@ -18,7 +18,7 @@ func _physics_process(delta):
 	
 func take_damage():
 	mob_health -= player_damage
-	%mob_verde.play_hurt()
+	%mob_moreno.play_hurt()
 	
 	if mob_health <= 0:
 		emit_signal("mob_died") 

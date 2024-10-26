@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckd60eqvujtrr"]
+[gd_scene load_steps=8 format=3 uid="uid://ckd60eqvujtrr"]
 
 [ext_resource type="PackedScene" uid="uid://dkegtbw3xpx7n" path="res://player.tscn" id="1_814lj"]
 [ext_resource type="Script" path="res://game.gd" id="1_qadgi"]
 [ext_resource type="PackedScene" uid="uid://cqvpml0ppslm2" path="res://pine_tree.tscn" id="2_lgpvb"]
 [ext_resource type="PackedScene" uid="uid://j1bew8xwglm3" path="res://walls.tscn" id="4_kf80p"]
+[ext_resource type="PackedScene" uid="uid://b0hmx6cfrw61t" path="res://roca.tscn" id="5_ynj1y"]
 
 [sub_resource type="Curve2D" id="Curve2D_hftxx"]
 _data = {
@@ -45,8 +46,12 @@ unique_name_in_owner = true
 position = Vector2(-1739, 896)
 rotation = -0.151882
 
-[node name="Timer" type="Timer" parent="Player/Path2D/PathFollow2D"]
+[node name="Timer_verde" type="Timer" parent="Player/Path2D/PathFollow2D"]
 wait_time = 0.5
+autostart = true
+
+[node name="Timer_moreno" type="Timer" parent="Player/Path2D/PathFollow2D"]
+wait_time = 3.5
 autostart = true
 
 [node name="ScoreLabel" type="Label" parent="Player"]
@@ -59,6 +64,81 @@ label_settings = SubResource("LabelSettings_08w1f")
 
 [node name="PineTree" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(264, 313)
+
+[node name="PineTree2" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-782, 19)
+
+[node name="PineTree10" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-869, 532)
+
+[node name="PineTree11" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-469, 453)
+
+[node name="PineTree12" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-197, 1329)
+
+[node name="PineTree13" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(1272, -68)
+
+[node name="PineTree14" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(366, -87)
+
+[node name="PineTree15" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(1578, 1374)
+
+[node name="PineTree16" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(1971, 834)
+
+[node name="PineTree17" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-1060, 641)
+
+[node name="PineTree20" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-998, 656)
+
+[node name="PineTree23" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-937, 626)
+
+[node name="PineTree24" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-869, 595)
+
+[node name="PineTree25" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-913, 445)
+
+[node name="PineTree26" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-892, 356)
+
+[node name="PineTree27" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-934, 930)
+
+[node name="PineTree28" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-1013, 145)
+
+[node name="PineTree29" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-522, 213)
+
+[node name="PineTree30" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-564, 617)
+
+[node name="PineTree31" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-692, 734)
+
+[node name="PineTree32" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-805, 870)
+
+[node name="PineTree33" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-624, 88)
+
+[node name="PineTree34" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-1009, 1315)
+
+[node name="PineTree21" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-22, 299)
+
+[node name="PineTree22" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-173, -59)
+
+[node name="PineTree18" parent="." instance=ExtResource("2_lgpvb")]
+position = Vector2(-955, 517)
 
 [node name="PineTree3" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(447, 739)
@@ -78,11 +158,30 @@ position = Vector2(1122, 992)
 [node name="PineTree8" parent="." instance=ExtResource("2_lgpvb")]
 position = Vector2(1120, 483)
 
-[node name="PineTree9" parent="." instance=ExtResource("2_lgpvb")]
-position = Vector2(928, 208)
-
 [node name="wall" parent="." instance=ExtResource("4_kf80p")]
 position = Vector2(-528, -64)
 
+[node name="StaticBody2D" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(232, 787)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(601, 185)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(-365, 444)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(-712, 1029)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(674, 1282)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(2158, 1203)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("5_ynj1y")]
+position = Vector2(2150, 55)
+
 [connection signal="health_deplited" from="Player" to="." method="_on_player_health_deplited"]
-[connection signal="timeout" from="Player/Path2D/PathFollow2D/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Player/Path2D/PathFollow2D/Timer_verde" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Player/Path2D/PathFollow2D/Timer_moreno" to="." method="_on_timer_moreno_timeout"]

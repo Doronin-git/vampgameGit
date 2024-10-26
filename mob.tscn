@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://civiluexkykoc"]
 
 [ext_resource type="Script" path="res://mob.gd" id="1_6wr1g"]
-[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="1_x00kl"]
+[ext_resource type="PackedScene" uid="uid://bh8bdffs2qe6r" path="res://mob_verde.tscn" id="2_4ax6j"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n54ca"]
 radius = 53.0
@@ -11,9 +11,9 @@ collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_6wr1g")
 
-[node name="Slime" parent="." instance=ExtResource("1_x00kl")]
-unique_name_in_owner = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -29)
+position = Vector2(-1, -25)
 shape = SubResource("CircleShape2D_n54ca")
+
+[node name="mob_verde" parent="." instance=ExtResource("2_4ax6j")]
+unique_name_in_owner = true

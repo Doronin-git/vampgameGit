@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0hmx6cfrw61t"]
+
+[ext_resource type="Texture2D" uid="uid://bodv1no2vklau" path="res://addons/roca.png" id="1_27sx0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_murkf"]
+radius = 79.2465
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Roca" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 1.90735e-06)
+scale = Vector2(0.153827, 0.162124)
+texture = ExtResource("1_27sx0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+rotation = -2.44588
+shape = SubResource("CircleShape2D_murkf")

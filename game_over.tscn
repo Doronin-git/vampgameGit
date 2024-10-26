@@ -21,7 +21,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Label" type="Label" parent="GameOver/ColorRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.604167
+anchor_left = 0.486979
 anchor_top = 0.5
 anchor_right = 0.486979
 anchor_bottom = 0.5
@@ -37,6 +37,7 @@ horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="shop_button" type="Button" parent="GameOver/ColorRect"]
+layout_mode = 0
 offset_left = 624.0
 offset_top = 528.0
 offset_right = 1296.0
